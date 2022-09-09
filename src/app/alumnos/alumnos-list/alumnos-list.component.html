@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Telefono</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let alumno of alumnosList'>
+      <td>{{alumno.nombre}}</td>
+      <td>{{alumno.sexo ? 'H':'M'}}</td>
+      <td>{{alumno.telefono}}</td>
+    </tr>
+  </tbody>
+</table>
